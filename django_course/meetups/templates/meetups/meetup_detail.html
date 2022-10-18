@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'meetups/style/base.css' %}">
+    <link rel="stylesheet" href="{% static 'meetups/style/meetup_details.css' %}">
+</head>
+<body>
+    <main>
+        <article>
+            <img src="" alt="">
+            <section id="location">
+                <h2>Meetup Location</h2>
+                <address>This meeup takes place in <span>LOCATION</span> (ADDRESS).</address>
+            </section>
+ 
+            <section id="details">
+                <h2>What's thsi Meeup About?</h2>
+                <p>{{ description }}</p>
+                <footer>
+                    <p>Need more detials? Please <a href="">contact the organizer</a> (but don't spam us :p)</p>
+                </footer>
+
+                <section id="registration">
+                    <h2>Join us!</h2>
+                    FORM
+                </section>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
